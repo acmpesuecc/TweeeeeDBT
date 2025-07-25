@@ -1,5 +1,9 @@
 # TweeeeDBT
 
+## Streaming Pipeline
+
+![](/image.png)
+
 ## Zookeeper and Kafka setup
 ```bash
 docker compose up
@@ -112,5 +116,7 @@ python3 producer.py
 ```
 
 ## ToDo 
+- [ ] Data Visualization Layer
 - [ ] Folder Structuring
-- [ ] System Architecture Diagram
+- [x] System Architecture Diagram
+- [ ] Dockerize Streaming
