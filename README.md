@@ -4,6 +4,9 @@
 
 ![](/image.png)
 
+## Dataset
+[click here to download](https://www.kaggle.com/datasets/kaushiksuresh147/ipl2020-tweets)
+
 ## Zookeeper and Kafka setup
 ```bash
 docker compose up
