@@ -32,13 +32,11 @@ TweeeeeDBT/
 │   ├── CONTRIBUTING.md         # Contribution guidelines
 │   ├── ProjectReport.pdf       # Project documentation
 │   ├── image.png               # Architecture diagram
-│   ├── REORGANIZATION_SUMMARY.md # Project reorganization details
-│   ├── dashboard_README.md     # Dashboard documentation
 │   └── Requirement Specification/
-│       └── requirements.txt    # Python dependencies
 ├── scripts/                     # Utility scripts
 │   └── reset-kafka.sh          # Kafka reset script
 ├── docker-compose.yaml          # Docker services
+├── requirements.txt             # Python dependencies
 ├── .env                        # Environment variables
 └── README.md                   # This file
 ```

@@ -6,7 +6,7 @@ import os
 import psutil
 from dotenv import load_dotenv
 
-load_dotenv()
+load_dotenv(dotenv_path='../../.env')
 
 # PostgreSQL connection
 DB_CONFIG = {

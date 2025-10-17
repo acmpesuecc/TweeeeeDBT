@@ -8,7 +8,7 @@ producer = KafkaProducer(
     value_serializer=lambda v: json.dumps(v).encode('utf-8')
 )
 
-df = pd.read_csv("IPL_2022_tweets.csv")
+df = pd.read_csv("../../data/IPL_2022_tweets.csv")
 
 for _, row in df.head(1500).iterrows():
     data = row.to_dict()

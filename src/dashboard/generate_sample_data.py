@@ -9,7 +9,7 @@ from dotenv import load_dotenv
 import random
 from datetime import datetime, timedelta
 
-load_dotenv()
+load_dotenv(dotenv_path='../../.env')
 
 # Database configuration
 DB_CONFIG = {

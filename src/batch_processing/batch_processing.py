@@ -6,7 +6,7 @@ import psutil
 import os
 from dotenv import load_dotenv
 
-load_dotenv()
+load_dotenv(dotenv_path='../../.env')
 
 # Spark session setup
 spark = SparkSession.builder \
@@ -14,7 +14,7 @@ spark = SparkSession.builder \
     .getOrCreate()
 
 # Load CSV and limit to 1500 rows
-df = spark.read.csv("IPL_2022_tweets.csv", header=True, inferSchema=True)
+df = spark.read.csv("../../data/IPL_2022_tweets.csv", header=True, inferSchema=True)
 df = df.limit(1500)
 
 # Add timestamp column

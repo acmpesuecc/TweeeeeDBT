@@ -10,7 +10,7 @@ import time
 from datetime import datetime
 
 # Load environment variables
-load_dotenv()
+load_dotenv(dotenv_path='../../.env')
 
 # Database configuration
 DB_CONFIG = {

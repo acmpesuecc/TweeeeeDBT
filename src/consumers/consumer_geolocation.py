@@ -7,7 +7,7 @@ import psycopg2
 import psutil
 from dotenv import load_dotenv
 
-load_dotenv()
+load_dotenv(dotenv_path='../../.env')
 
 DB_CONFIG = {
     'dbname': os.getenv('POSTGRES_DB'),
