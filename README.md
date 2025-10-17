@@ -119,7 +119,26 @@ python3 producer.py
 ```
 
 ## ToDo 
-- [ ] Data Visualization Layer
+- [x] Data Visualization Layer
 - [ ] Folder Structuring
 - [x] System Architecture Diagram
 - [ ] Dockerize Streaming
+
+## 📊 Analytics Dashboard
+
+A Streamlit web dashboard is now available to visualize real-time analytics:
+
+```bash
+streamlit run dashboard.py
+```
+
+Access at: http://localhost:8501
+
+### Dashboard Features:
+- **Real-time Metrics**: Live tweet counts and system health
+- **Geographic Analytics**: Delhi vs Mumbai tweet distribution  
+- **Team Analysis**: RCB vs CSK mention tracking
+- **Performance Monitoring**: Batch vs streaming comparison
+- **Interactive Charts**: Plotly visualizations with filters
+
+The dashboard reads directly from PostgreSQL tables and updates every 30 seconds for real-time insights.

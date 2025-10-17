@@ -35,7 +35,7 @@ DB_CONFIG = {
 }
 
 # Check for missing env vars
-required_vars = ['POSTGRES_DB', 'POSTGRES_USER', 'POSTGRES_PASSWORD', 'POSTGRES_HOST', 'POSTGRES_PORT']
+required_vars = ['POSTGRES_DB', 'POSTGRES_USER', 'POSTGRES_HOST', 'POSTGRES_PORT']
 missing_vars = [var for var in required_vars if not os.getenv(var)]
 
 if missing_vars:

@@ -1,11 +1,14 @@
 import psycopg2
 import os
+from dotenv import load_dotenv
+
+load_dotenv()
 
 # other users make a .env file and fill it 
 DB_CONFIG = {
         'dbname': os.getenv('POSTGRES_DB', 'tweedbt'),
-        'user': os.getenv('POSTGRES_USER', 'kk'),
-        'password': os.getenv('POSTGRES_PASSWORD', 'admin'),
+        'user': os.getenv('POSTGRES_USER', 'mayurshadhidhar'),
+        'password': os.getenv('POSTGRES_PASSWORD', ''),
         'host': os.getenv('POSTGRES_HOST', '127.0.0.1'),
         'port': os.getenv('POSTGRES_PORT', '5432')
         }
